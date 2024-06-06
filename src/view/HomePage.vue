@@ -21,10 +21,6 @@
       >
         <img class="swiper-lazy" :data-src="item.img" alt="轮播图" />
         <div class="swiper-lazy-preloader"></div>
-        <div class="swiper-slide-title">
-          <h1>{{ item.title }}</h1>
-          <p>{{ item.content }}</p>
-        </div>
       </swiper-slide>
     </swiper>
 
@@ -34,23 +30,23 @@
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
           <img
             class="img-responsive"
-            src="@/assets/img/img1.png"
+            src="@/assets/img/feature.webp"
             alt="大数据管理系统"
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-            大数据管理系统
-            <small>/ Big Data Management System</small>
+            精细化广告投放服务
+            <small>/ Refined advertising service service</small>
           </h2>
           <p>
-            当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。
+            专业的投放运营优化团队，优化Leader深耕RPG、SLG、小说客户类型，拥有10年以上甲方优化运营经验。
           </p>
           <p>
-            我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。
+            拥有8年以上乙方优化推广经验，对海外市场素材的精准把控能力以及商业化变现的精准思维，可帮助轻度游戏&工具客户实现高价值的用户增量，目前已成功帮助数百名客户实现量级和效果的增长。
           </p>
-          <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
-          <a href="javascript:;" class="btn btn-lg btn-block btn-info"
+          <h2 class="bigData-device">7/24不间断服务</h2>
+          <a href="/official-website/?#/contactus" class="btn btn-lg btn-block btn-info"
             >联系我们</a
           >
         </div>
@@ -60,8 +56,8 @@
     <!-- 您身边的IT专家 -->
     <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
-        <h1>您身边的IT专家</h1>
-        <h3>7x24小时提供出色的IT服务</h3>
+        <h1>您身边的投放专家</h1>
+        <h3>7x24小时提供出色的广告投放服务</h3>
         <button
           class="btn btn-default btn-sm"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
@@ -73,63 +69,6 @@
           <span></span>
           <span></span>
           <span></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 客户评价 -->
-    <div id="customer" class="container-fuild">
-      <div class="container customer-container">
-        <p class="customer-title text-center">客户评价</p>
-        <swiper
-          class="swiper-container customer-swiper hidden-xs"
-          :modules="modules"
-          :slides-per-view="1"
-          :space-between="0"
-          navigation
-          loop
-          autoplay
-          :pagination="{
-            clickable: true
-          }"
-        >
-          <swiper-slide
-            class="swiper-slide customer-block"
-            v-for="(item, index) in customerList"
-            :key="index"
-          >
-            <div class="customer-logo">
-              <img class="center-block" :src="item.logo" alt="logo" />
-            </div>
-            <div class="customer-yh">
-              <img src="@/assets/img/yinhao.png" alt="引号" />
-            </div>
-            <div class="customer-content1">
-              <small>{{ item.content }}</small>
-            </div>
-            <div class="customer-content2">{{ item.title }}</div>
-          </swiper-slide>
-        </swiper>
-
-        <div class="row visible-xs customer-block">
-          <div
-            class="col-xs-12"
-            v-for="(item, index) in customerList"
-            :key="index"
-          >
-            <div class="customer-logo">
-              <img class="center-block" :src="item.logo" alt="logo" />
-            </div>
-            <div class="customer-yh">
-              <img src="@/assets/img/yinhao.png" alt="引号" />
-            </div>
-            <div class="customer-content1">
-              <small>{{ item.content }}</small>
-            </div>
-            <div class="customer-content2">
-              <small>{{ item.title }}</small>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -170,7 +109,7 @@
 
 <script setup name="HomePage">
 import WOW from 'wow.js'
-import { getCurrentInstance, onMounted } from 'vue'
+import { onMounted } from 'vue'
 // import Swiper from 'swiper'
 import { Navigation, Pagination, Scrollbar, A11y, Lazy, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -181,12 +120,9 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/lazy'
 import 'swiper/css/autoplay'
 
-import banner1 from '@/assets/img/banner1.png'
-import banner2 from '@/assets/img/banner2.jpg'
-
-import logo_hp from '@/assets/img/logo_hp.png'
-import logo_kk from '@/assets/img/logo_kk.png'
-import logo_toyota from '@/assets/img/logo_toyota.png'
+import banner1 from '@/assets/img/slide1.webp'
+import banner2 from '@/assets/img/slide2.webp'
+import banner3 from '@/assets/img/slide3.webp'
 
 import img_tel from '@/assets/img/tel.png'
 import img_computer from '@/assets/img/computer.png'
@@ -205,105 +141,13 @@ const swiperList = [
     content: '宣传简介您身边的IT专家2宣传简介您身边的IT专家2'
   },
   {
-    img: banner1,
+    img: banner3,
     title: '您身边的IT专家3',
     content: '宣传简介您身边的IT专家3宣传简介您身边的IT专家3'
   },
-  {
-    img: banner2,
-    title: '您身边的IT专家4',
-    content: '宣传简介您身边的IT专家4宣传简介您身边的IT专家4'
-  }
 ]
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, Lazy, Autoplay]
-
-const customerList = [
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_kk,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_toyota,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_kk,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_toyota,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_kk,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_toyota,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_kk,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  },
-  {
-    logo: logo_hp,
-    title:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。',
-    content:
-      '您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。'
-  }
-]
 
 const serverList = [
   {
@@ -695,4 +539,3 @@ onMounted(() => {
   }
 }
 </style>
-

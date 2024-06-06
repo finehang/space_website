@@ -15,14 +15,14 @@
     <div class="header-nav container hidden-xs">
       <!-- 导航logo -->
       <div class="header-nav-logo">
-        <img src="@/assets/img/logo_black.png" />
+        <img src="@/assets/img/logo_black.png" alt="logo"/>
       </div>
       <!-- 导航内容 -->
       <ul class="header-nav-wrapper">
         <li
           v-for="(item, index) in navList"
           :key="index"
-          :class="index == navIndex ? 'active' : ''"
+          :class="index === navIndex ? 'active' : ''"
           @click="navClick(index, item.name)"
         >
           <router-link :to="item.path">
@@ -83,7 +83,7 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
 const phone = import.meta.env.VITE_APP_PHONE
 const email = import.meta.env.VITE_APP_EMAIL
 const navIndex = ref('')
@@ -98,20 +98,20 @@ const navList = [
     path: '/',
     children: []
   },
-  {
-    name: '软件产品',
-    path: '/software',
-    children: [
-      {
-        name: '智能小镇管理系统',
-        path: '/software/smartTown'
-      },
-      {
-        name: '大数据管理系统',
-        path: '/software/bigData'
-      }
-    ]
-  },
+  // {
+  //   name: '软件产品',
+  //   path: '/software',
+  //   children: [
+  //     {
+  //       name: '智能小镇管理系统',
+  //       path: '/software/smartTown'
+  //     },
+  //     {
+  //       name: '大数据管理系统',
+  //       path: '/software/bigData'
+  //     }
+  //   ]
+  // },
   {
     name: '相关服务',
     path: '/service',
@@ -127,11 +127,11 @@ const navList = [
     path: '/companyintroduction',
     children: []
   },
-  {
-    name: '工作机会',
-    path: '/jobchance',
-    children: []
-  },
+  // {
+  //   name: '工作机会',
+  //   path: '/jobchance',
+  //   children: []
+  // },
   {
     name: '联系我们',
     path: '/contactus',
@@ -187,8 +187,8 @@ function menuClick() {
 
 /* 导航栏logo图片 */
 #header .header-nav .header-nav-logo img {
-  width: 95px;
-  height: 45px;
+  width: 190px;
+  height: 90px;
   position: absolute;
   top: 0;
   left: 0;

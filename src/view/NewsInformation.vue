@@ -6,8 +6,7 @@
         <p style="color: #b2b2b2">Company News</p>
       </div>
       <div class="nav container text-center">
-        <a href="javascript:;" class="active">公司新闻</a>
-        <a href="javascript:;">行业动态</a>
+        <a href="javascript:" class="active">公司新闻</a>
       </div>
       <ul class="news-container container-fuild">
         <li v-for="(item, index) in newsList" :key="index" class="wow fadeIn">
@@ -20,7 +19,7 @@
             <span>{{ item.year }}</span>
           </div>
           <div class="circle">
-            <img src="@/assets/img/circle.png" />
+            <img src="@/assets/img/circle.png" alt="circle"/>
             <i class="line center-block"></i>
           </div>
         </li>
@@ -32,61 +31,29 @@
   </div>
 </template>
 
-<script setup name="NewsInformation">
+<script setup>
 import WOW from 'wow.js'
 import { onMounted } from 'vue'
 const newsList = [
   {
     id: '001',
-    title: '世界上第一个程序员',
+    title: '出海先锋茶话会“爆”满收官，畅聊游戏出海走向',
     introduce:
-      '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-    date: '05-24',
-    year: '2019'
+      '2024年4月25日，携手广大大，联合武汉数字创意与游戏产业协会，特邀Meta、Google两大媒体相聚春日武汉，成功举办【听万物生长，话出海新机】主题出海先锋茶话会。',
+    date: '04-25',
+    year: '2024'
   },
   {
     id: '002',
-    title: '世界上第二个程序员',
+    title: 'ONE有引力，聚力不凡｜GatherOne年会盛典回顾',
     introduce:
-      '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-    date: '05-24',
-    year: '2019'
-  },
-  {
-    id: '003',
-    title: '世界上第三个程序员',
-    introduce:
-      '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-    date: '05-24',
-    year: '2019'
-  },
-  {
-    id: '004',
-    title: '世界上第四个程序员',
-    introduce:
-      '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-    date: '05-24',
-    year: '2019'
-  },
-  {
-    id: '005',
-    title: '世界上第五个程序员',
-    introduce:
-      '为计算程序拟定“算法”，写作的第五份“程序设计流程图”，被珍视为“第一位给计算机',
-    date: '05-24',
-    year: '2019'
-  },
-  {
-    id: '006',
-    title: '世界上第六个程序员',
-    introduce:
-      '为计算程序拟定“算法”，写作的第五份“程序设计流程图”，被珍视为“第一位给计算机',
-    date: '05-24',
-    year: '2019'
+      '2023年，对于我们是突破的一年，业务成绩斐然，有目共睹；是温暖的一年，公司周年纪念、活力团建等活动快乐又温馨。我们的伙伴们，沿着公司发展的方向努力拼搏，各自成长，一同收获，共同进步。',
+    date: '04-02',
+    year: '2024'
   }
 ]
 onMounted(() => {
-  var wow = new WOW()
+  let wow = new WOW()
   wow.init()
 })
 </script>
@@ -211,4 +178,3 @@ onMounted(() => {
   }
 }
 </style>
-

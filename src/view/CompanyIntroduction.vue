@@ -7,22 +7,13 @@
           <img
             class="img-responsive center-block"
             src="@/assets/img/about_img.png"
+            alt="about"
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
-          <h3>网站建设文化传播有限公司</h3>
+          <h3>北京构想空间科技有限公司</h3>
           <p class=".text-justify">
-            有家软件公司, 是一家以高科技创意为核心的技术服务公司,
-            聚集了众多对软件开发和界面设计有独特创意的高端人才,
-            致力于为企业提供软件开发, 网站建设, 网页设计, IT外包, 手机应用开发,
-            互联网营销, 微信平台开发等解决方案。
-          </p>
-          <p class=".text-justify">
-            我们的客户包括集团上市公司, 酒店, IT科技, 教育, 服装, 贸易, 外贸,
-            时尚, 生物, 工业, 制造等众多行业, 并树立了良好的口碑,
-            积累了丰富的经验和成功案例. 我们提供权威专业的互联网品牌策划,
-            并实施高标准的设计方案, 创造真正意义上的品牌网站,
-            为互联网品牌在互动行销领域创造最大价值而不懈努力!
+            我们是一家专业为游戏、工具、泛娱乐等移动行业提供精准出海营销的服务商。创始人来自PayPal、香港品众、猎豹等一线出海企业。2019年1月起正式成为 Facebook顶级代理商，同时加入Google优秀合作伙伴（Google Premier Partner）。业务遍布北 京、上海、广州、深圳、长沙、重庆、成都、武汉、合肥等 30 余个城市。
           </p>
         </div>
       </div>
@@ -34,7 +25,7 @@
 import WOW from 'wow.js'
 import { onMounted } from 'vue'
 onMounted(() => {
-  var wow = new WOW()
+  let wow = new WOW()
   wow.init()
 })
 </script>
@@ -71,4 +62,3 @@ onMounted(() => {
   }
 }
 </style>
-

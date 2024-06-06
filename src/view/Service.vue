@@ -39,26 +39,26 @@ import service4 from '@/assets/img/service4.jpg'
 const serviceList = [
   {
     id: 'section-1',
-    title: '软件定制开发',
-    eng_title: 'Customize App',
+    title: '资深的优化运营服务团队',
+    eng_title: 'Optimize Operation',
     img: service1
   },
   {
     id: 'section-2',
-    title: 'IT外包服务',
-    eng_title: 'Outsourcing',
+    title: '卓越的效果营销服务团队',
+    eng_title: 'Effect Marketing',
     img: service2
   },
   {
     id: 'section-3',
-    title: '网上商城建设',
-    eng_title: 'eCommerce Site',
+    title: '高效的创意素材支持团队',
+    eng_title: 'Creative Support',
     img: service3
   },
   {
     id: 'section-4',
-    title: 'iOS应用定制开发',
-    eng_title: 'iOS App Dev',
+    title: '专业的运营培训服务团队',
+    eng_title: 'Operating Training',
     img: service4
   }
 ]
@@ -74,7 +74,7 @@ function ServiceClick(id) {
   })
 }
 onMounted(() => {
-  var wow = new WOW()
+  let wow = new WOW()
   wow.init()
 })
 </script>
@@ -147,4 +147,3 @@ onMounted(() => {
   height: 90%;
 }
 </style>
-
