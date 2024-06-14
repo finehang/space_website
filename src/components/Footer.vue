@@ -3,10 +3,10 @@
     <div class="logo">
       <img src="@/assets/img/logo_w.png" alt="logo" class="logo">
     </div>
-    <p class="title">北京构想空间科技有限公司</p>
-    <p class="address_tel_fax">
-      地址：{{ address }}
-    </p>
+    <p class="title">香港构想空间网络科技有限公司</p>
+<!--    <p class="address_tel_fax">-->
+<!--      地址：{{ address }}-->
+<!--    </p>-->
     <p class="email_wx">
       <p>邮箱：{{ email }}</p>
       <p>公司QQ号：{{ qq }}</p>
