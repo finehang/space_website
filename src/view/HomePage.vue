@@ -30,7 +30,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
           <img
             class="img-responsive"
-            src="@/assets/img/feature.webp"
+            src="@/assets/img/feature.png"
             alt="大数据管理系统"
           />
         </div>
@@ -120,9 +120,9 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/lazy'
 import 'swiper/css/autoplay'
 
-import banner1 from '@/assets/img/slide1.webp'
-import banner2 from '@/assets/img/slide2.webp'
-import banner3 from '@/assets/img/slide3.webp'
+import banner1 from '@/assets/img/slide1.jpg'
+import banner2 from '@/assets/img/slide2.jpg'
+import banner3 from '@/assets/img/slide3.jpg'
 
 import img_tel from '@/assets/img/tel.png'
 import img_computer from '@/assets/img/computer.png'

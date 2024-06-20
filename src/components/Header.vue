@@ -118,7 +118,7 @@ const navList = [
     children: []
   },
   {
-    name: '新闻动态',
+    name: '行业动态',
     path: '/newsinformation',
     children: []
   },

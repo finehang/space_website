@@ -2,11 +2,11 @@
   <div id="NewsInformation">
     <div class="container">
       <div class="container text-center">
-        <h3>新闻动态</h3>
+        <h3>行业动态</h3>
         <p style="color: #b2b2b2">Company News</p>
       </div>
       <div class="nav container text-center">
-        <a href="javascript:" class="active">公司新闻</a>
+        <a href="javascript:" class="active">行业新闻</a>
       </div>
       <ul class="news-container container-fuild">
         <li v-for="(item, index) in newsList" :key="index" class="wow fadeIn">
@@ -45,9 +45,9 @@ const newsList = [
   },
   {
     id: '002',
-    title: 'ONE有引力，聚力不凡｜GatherOne年会盛典回顾',
+    title: 'ONE有引力，聚力不凡｜IdeaSpace年会盛典回顾',
     introduce:
-      '2023年，对于我们是突破的一年，业务成绩斐然，有目共睹；是温暖的一年，公司周年纪念、活力团建等活动快乐又温馨。我们的伙伴们，沿着公司发展的方向努力拼搏，各自成长，一同收获，共同进步。',
+      '2023年，对于我们是突破的一年，业务成绩斐然，有目共睹；是温暖的一年，公司周年纪念、活力团建等活动快乐又温馨。我们的伙伴们，沿着公司发展的方向努力拼搏，共同进步。',
     date: '04-02',
     year: '2024'
   }

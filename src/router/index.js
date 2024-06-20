@@ -77,7 +77,7 @@ const routes = [
         name: 'newsInformation',
         component: () => import('@/view/NewsInformation.vue'),
         meta: {
-          title: '新闻动态'
+          title: '行业动态'
         }
       },
       {
@@ -114,4 +114,3 @@ export function createRouter() {
     routes
   })
 }
-
