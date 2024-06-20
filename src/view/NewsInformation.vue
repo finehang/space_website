@@ -3,7 +3,7 @@
     <div class="container">
       <div class="container text-center">
         <h3>行业动态</h3>
-        <p style="color: #b2b2b2">Company News</p>
+        <p style="color: #b2b2b2">Industry Dynamics</p>
       </div>
       <div class="nav container text-center">
         <a href="javascript:" class="active">行业新闻</a>
