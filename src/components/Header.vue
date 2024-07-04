@@ -117,11 +117,11 @@ const navList = [
     path: '/service',
     children: []
   },
-  {
-    name: '行业动态',
-    path: '/newsinformation',
-    children: []
-  },
+  // {
+  //   name: '行业动态',
+  //   path: '/newsinformation',
+  //   children: []
+  // },
   {
     name: '公司介绍',
     path: '/companyintroduction',

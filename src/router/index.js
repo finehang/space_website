@@ -72,14 +72,14 @@ const routes = [
           title: '相关服务-详情'
         }
       },
-      {
-        path: '/newsinformation',
-        name: 'newsInformation',
-        component: () => import('@/view/NewsInformation.vue'),
-        meta: {
-          title: '行业动态'
-        }
-      },
+      // {
+      //   path: '/newsinformation',
+      //   name: 'newsInformation',
+      //   component: () => import('@/view/NewsInformation.vue'),
+      //   meta: {
+      //     title: '行业动态'
+      //   }
+      // },
       {
         path: '/companyintroduction',
         name: 'companyIntroduction',
