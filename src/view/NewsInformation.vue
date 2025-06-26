@@ -2,11 +2,11 @@
   <div id="NewsInformation">
     <div class="container">
       <div class="container text-center">
-        <h3>行业动态</h3>
+        <h3>行業動態</h3>
         <p style="color: #b2b2b2">Industry Dynamics</p>
       </div>
       <div class="nav container text-center">
-        <a href="javascript:" class="active">行业新闻</a>
+        <a href="javascript:" class="active">行業新聞</a>
       </div>
       <ul class="news-container container-fuild">
         <li v-for="(item, index) in newsList" :key="index" class="wow fadeIn">
@@ -37,17 +37,17 @@ import { onMounted } from 'vue'
 const newsList = [
   {
     id: '001',
-    title: '出海先锋茶话会“爆”满收官，畅聊游戏出海走向',
+    title: '出海先鋒茶話會“爆”滿收官，暢聊遊戲出海走向',
     introduce:
-      '2024年4月25日，携手广大大，联合武汉数字创意与游戏产业协会，特邀Meta、Google两大媒体相聚春日武汉，成功举办【听万物生长，话出海新机】主题出海先锋茶话会。',
+      '2024年4月25日，攜手廣大大，聯合武漢數字創意與遊戲產業協會，特邀Meta、Google兩大媒體相聚春日武漢，成功舉辦【聽萬物生長，話出海新機】主題出海先鋒茶話會。 ',
     date: '04-25',
     year: '2024'
   },
   {
     id: '002',
-    title: 'ONE有引力，聚力不凡｜IdeaSpace年会盛典回顾',
+    title: 'ONE有引力，聚力不凡|IdeaSpace年會盛典回顧',
     introduce:
-      '2023年，对于我们是突破的一年，业务成绩斐然，有目共睹；是温暖的一年，公司周年纪念、活力团建等活动快乐又温馨。我们的伙伴们，沿着公司发展的方向努力拼搏，共同进步。',
+      '2023年，對於我們是突破的一年，業務成績斐然，有目共睹; 是溫暖的一年，公司周年紀念、活力團建等活動快樂又溫馨。 我們的夥伴們，沿著公司發展的方向努力拚搏，共同進步。',
     date: '04-02',
     year: '2024'
   }

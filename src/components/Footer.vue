@@ -3,20 +3,18 @@
     <div class="logo">
       <img src="@/assets/img/logo_w.png" alt="logo" class="logo">
     </div>
-    <p class="title">香港构想空间网络科技有限公司</p>
-<!--    <p class="address_tel_fax">-->
-<!--      地址：{{ address }}-->
-<!--    </p>-->
+    <p class="title">GATHER WISDOM</p>
     <p class="email_wx">
-      <p>邮箱：{{ email }}</p>
-      <p>公司QQ号：{{ qq }}</p>
+      <p>郵箱：{{ email }}</p>
+      <p>QQ號：{{ qq }}</p>
+      <p>手機號：{{ phone }}</p>
     </p>
-    <p class="copy">Copyright &copy; 2022 - 2024 {{ company }}</p>
+    <p class="copy">Copyright &copy; 2022 - 2025 {{ company }}</p>
   </div>
 </template>
 
 <script setup name="Footer">
-const address = import.meta.env.VITE_APP_ADDRESS
+const phone = import.meta.env.VITE_APP_PHONE
 const email = import.meta.env.VITE_APP_EMAIL
 const qq = import.meta.env.VITE_APP_QQ
 const company = import.meta.env.VITE_APP_COMPANYNAME

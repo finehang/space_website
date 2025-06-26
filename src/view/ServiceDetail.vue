@@ -1,11 +1,11 @@
 <template>
   <div id="ServiceDetail">
-    <div class="banner container-fuild text-center">相关服务</div>
+    <div class="banner container-fuild text-center">相關服務</div>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3" id="myScrollspy">
           <ul class="nav nav-tabs nav-stacked center-block" id="myNav">
-            <p>特色服务</p>
+            <p>特色服務</p>
             <li
               :class="item.id == id ? 'active' : ''"
               v-for="(item, index) in serviceNavList"
@@ -43,49 +43,49 @@ const id = ref('section-1')
 const serviceNavList = [
   {
     id: 'section-1',
-    title: '优化运营服务'
+    title: '優化運營服務'
   },
   {
     id: 'section-2',
-    title: '效果营销服务'
+    title: '效果營銷服務'
   },
   {
     id: 'section-3',
-    title: '创意素材支持'
+    title: '創意素材支援'
   },
   {
     id: 'section-4',
-    title: '运营培训服务'
+    title: '運營培訓服務'
   }
 ]
 const serviceContentList = [
   {
     id: 'section-1',
-    title: '优化运营服务',
+    title: '優化運營服務',
     eng_title: 'Optimize Operation',
     content:
-      '我们设有专业的投放运营优化团队，优化Leader深耕RPG、SLG、小说客户类型，拥有10年以上甲方优化运营经验，可针对游戏客户不同生命周期定制差异化的推广方案和针对性的优化培训课程，从AEO/VO最佳实践到产品前期预注册到再营销，目前已成功帮助数百名客户实现从0-1，从1-100的增长。'
+      '我們設有專業的投放運營優化團隊，優化Leader深耕RPG、SLG、小說客戶類型，擁有10年以上甲方優化運營經驗，可針對遊戲客戶不同生命週期定製差異化的推廣方案和針對性的優化培訓課程，從AEO/VO最佳實踐到產品前期預註冊到再行銷，目前已成功幫助數百名客戶實現從0-1，從1-100的增長。'
   },
   {
     id: 'section-2',
-    title: '效果营销服务',
+    title: '效果營銷服務',
     eng_title: 'Effect Marketing',
     content:
-    '我们设有专业的效果营销优化团队，优化Leader深耕Casino、Casual、工具客户类型，拥有8年以上乙方优化推广经验，对海外市场素材的精准把控能力以及商业化变现的精准思维，可帮助轻度游戏&工具客户实现高价值的用户增量，目前已成功帮助数百名客户实现量级和效果的增长。'
+    '我們設有專業的效果行銷優化團隊，優化Leader深耕Casino、Casual、工具客戶類型，擁有8年以上乙方優化推廣經驗，對海外市場素材的精準把控能力以及商業化變現的精準思維，可説明輕度遊戲&工具客戶實現高價值的使用者增量，目前已成功幫助數百名客戶實現量級和效果的增長。'
   },
   {
     id: 'section-3',
-    title: '创意素材支持',
+    title: '創意素材支援',
     eng_title: 'Creative Support',
     content:
-      '服务过超千款出海游戏产品，拥有丰富的游戏买量经验和庞大的素材资源库支持。为游戏客户提供UE4引擎动画、真人剧情拍摄、外语配音和特效包装等专业的创意制作服务，满足客户定制化的需求，为游戏带来源源不断的新玩家流量。'
+      '服務過超千款出海遊戲產品，擁有豐富的遊戲買量經驗和龐大的素材資源庫支援。 為遊戲客戶提供UE4引擎動畫、真人劇情拍攝、外語配音和特效包裝等專業的創意製作服務，滿足客戶定製化的需求，為遊戲帶來源源不斷的新玩家流量。'
   },
   {
     id: 'section-4',
-    title: '运营培训服务',
+    title: '運營培訓服務',
     eng_title: 'Operating Training',
     content:
-      '专业的运营团队，将为客户提供专业以及高效的服务作为核心使命。针对AAA，iOS 14等Facebook产品更新推广使用方面进行定期学习，且为客户提供专业咨询培训；同时也为客户提供增量建议及方向性沟通，客户粘性强且排他性高。以技术为砖，服务建桥，搭建了与客户沟通的稳健桥梁。'
+      '專業的運營團隊，將為客戶提供專業以及高效的服務作為核心使命。 針對AAA，iOS 14等Facebook產品更新推廣使用方面進行定期學習，且為客戶提供專業諮詢培訓; 同時也為客戶提供增量建議及方向性溝通，客戶粘性強且排他性高。 以技術為磚，服務建橋，搭建了與客戶溝通的穩健橋樑。'
   }
 ]
 function toSection(_id) {

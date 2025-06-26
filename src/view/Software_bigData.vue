@@ -1,5 +1,5 @@
 <template>
-  <div id="Software">大数据管理系统</div>
+  <div id="Software">大數據管理系統</div>
 </template>
 <script setup name="bigData"></script>
 

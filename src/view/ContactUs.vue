@@ -1,6 +1,6 @@
 <template>
   <div id="ContactUs">
-    <div class="banner container-fuild text-center">联系我们</div>
+    <div class="banner container-fuild text-center">聯繫我們</div>
     <div class="container">
       <div class="container-fuild ContactUs-container">
         <div class="row">
@@ -13,29 +13,29 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    placeholder="请输入名字"
+                    placeholder="請輸入名字"
                   />
                 </div>
               </div>
               <div class="form-group">
-                <label for="email" class="col-sm-2 control-label">邮箱</label>
+                <label for="email" class="col-sm-2 control-label">郵箱</label>
                 <div class="col-sm-10">
                   <input
                     type="text"
                     class="form-control"
                     id="email"
-                    placeholder="请输入邮箱"
+                    placeholder="請輸入郵箱"
                   />
                 </div>
               </div>
               <div class="form-group">
-                <label for="tel" class="col-sm-2 control-label">电话</label>
+                <label for="tel" class="col-sm-2 control-label">電話</label>
                 <div class="col-sm-10">
                   <input
                     type="text"
                     class="form-control"
                     id="tel"
-                    placeholder="请输入电话"
+                    placeholder="請輸入電話"
                   />
                 </div>
               </div>
@@ -46,7 +46,7 @@
                     class="form-control"
                     id="content"
                     rows="8"
-                    placeholder="请输入内容"
+                    placeholder="請輸入内容"
                   ></textarea>
                 </div>
               </div>

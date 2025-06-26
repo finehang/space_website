@@ -1,7 +1,7 @@
 <template>
   <div id="Service">
     <div class="container text-center">
-      <h3>我们的服务</h3>
+      <h3>我們的服務</h3>
       <p style="color: #b2b2b2">The Best Service You Never See</p>
     </div>
     <div class="container">
@@ -19,7 +19,7 @@
               <p>{{ item.eng_title }}</p>
             </div>
             <div class="Service-item-img">
-              <img :src="item.img" alt="服务" />
+              <img :src="item.img" alt="服務" />
             </div>
             <div class="Service-item-border"></div>
           </div>
@@ -39,25 +39,25 @@ import service4 from '@/assets/img/service4.jpg'
 const serviceList = [
   {
     id: 'section-1',
-    title: '资深的优化运营服务团队',
+    title: '資深的優化運營服務團隊',
     eng_title: 'Optimize Operation',
     img: service1
   },
   {
     id: 'section-2',
-    title: '卓越的效果营销服务团队',
+    title: '卓越的效果營銷服務團隊',
     eng_title: 'Effect Marketing',
     img: service2
   },
   {
     id: 'section-3',
-    title: '高效的创意素材支持团队',
+    title: '高效的創意素材支持團隊',
     eng_title: 'Creative Support',
     img: service3
   },
   {
     id: 'section-4',
-    title: '专业的运营培训服务团队',
+    title: '專業的運營培訓服務團隊',
     eng_title: 'Operating Training',
     img: service4
   }

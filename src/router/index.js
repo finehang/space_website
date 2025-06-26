@@ -24,7 +24,7 @@ const routes = [
         name: 'Home',
         component: () => import('@/view/HomePage.vue'),
         meta: {
-          title: '首页'
+          title: '首頁'
         }
       },
       {
@@ -33,7 +33,7 @@ const routes = [
         component: () => import('@/view/Software.vue'),
         redirect: '/software/smartTown',
         meta: {
-          title: '软件产品'
+          title: '軟體產品'
         },
         children: [
           {

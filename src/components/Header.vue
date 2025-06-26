@@ -7,7 +7,7 @@
         <div class="server pull-left">
           <span class="glyphicon glyphicon-earphone"></span>{{ phone }}
           <span class="glyphicon glyphicon-envelope"></span>{{ email }}
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
+          <span class="glyphicon glyphicon-time"></span>7x24小時為您服務
         </div>
       </div>
     </div>
@@ -90,50 +90,26 @@ const navIndex = ref('')
 navIndex.value = sessionStorage.getItem('navIndex')
   ? sessionStorage.getItem('navIndex')
   : 0
-const menuName = ref('首页')
+const menuName = ref('首頁')
 const menuClass = ref('glyphicon glyphicon-menu-down')
 const navList = [
   {
-    name: '首页',
+    name: '首頁',
     path: '/',
     children: []
   },
-  // {
-  //   name: '软件产品',
-  //   path: '/software',
-  //   children: [
-  //     {
-  //       name: '智能小镇管理系统',
-  //       path: '/software/smartTown'
-  //     },
-  //     {
-  //       name: '大数据管理系统',
-  //       path: '/software/bigData'
-  //     }
-  //   ]
-  // },
   {
-    name: '相关服务',
+    name: '相關服務',
     path: '/service',
     children: []
   },
-  // {
-  //   name: '行业动态',
-  //   path: '/newsinformation',
-  //   children: []
-  // },
   {
-    name: '公司介绍',
+    name: '公司介紹',
     path: '/companyintroduction',
     children: []
   },
-  // {
-  //   name: '工作机会',
-  //   path: '/jobchance',
-  //   children: []
-  // },
   {
-    name: '联系我们',
+    name: '聯繫我們',
     path: '/contactus',
     children: []
   }

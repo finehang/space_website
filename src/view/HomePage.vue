@@ -19,7 +19,7 @@
         v-for="(item, index) in swiperList"
         :key="index"
       >
-        <img class="swiper-lazy" :data-src="item.img" alt="轮播图" />
+        <img class="swiper-lazy" :data-src="item.img" alt="輪播圖" />
         <div class="swiper-lazy-preloader"></div>
       </swiper-slide>
     </swiper>
@@ -31,23 +31,23 @@
           <img
             class="img-responsive"
             src="@/assets/img/feature.png"
-            alt="大数据管理系统"
+            alt="大數據管理系統"
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-            精细化广告投放服务
+            精細化廣告投放服務
             <small>/ Refined advertising service service</small>
           </h2>
           <p>
-            专业的投放运营优化团队，优化Leader深耕RPG、SLG、小说客户类型，拥有10年以上甲方优化运营经验。
+            專業的投放運營優化團隊，優化Leader深耕RPG、SLG、小說客戶類型，擁有10年以上甲方優化運營經驗。
           </p>
           <p>
-            拥有8年以上乙方优化推广经验，对海外市场素材的精准把控能力以及商业化变现的精准思维，可帮助轻度游戏&工具客户实现高价值的用户增量，目前已成功帮助数百名客户实现量级和效果的增长。
+            擁有8年以上乙方優化推廣經驗，對海外市場素材的精準把控能力以及商業化變現的精準思維，可説明輕度遊戲&工具客戶實現高價值的使用者增量，目前已成功幫助數百名客戶實現量級和效果的增長。
           </p>
-          <h2 class="bigData-device">7/24不间断服务</h2>
+          <h2 class="bigData-device">7/24不間斷服務</h2>
           <a href="/official-website/?#/contactus" class="btn btn-lg btn-block btn-info"
-            >联系我们</a
+            >聯繫我們</a
           >
         </div>
       </div>
@@ -56,14 +56,14 @@
     <!-- 您身边的IT专家 -->
     <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
-        <h1>您身边的投放专家</h1>
-        <h3>7x24小时提供出色的广告投放服务</h3>
+        <h1>您身邊的投放專家</h1>
+        <h3>7x24小時提供出色的廣告投放服務</h3>
         <button
           class="btn btn-default btn-sm"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
           onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
         >
-          联系我们
+          聯繫我們
         </button>
         <div class="contactUs-contactWay">
           <span></span>
@@ -77,7 +77,7 @@
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
-          <p>为什么选择我们的服务</p>
+          <p>為什麼選擇我們的服務</p>
           <p>THE REASON TO CHOOSING US</p>
         </div>
         <div class="row">
@@ -132,19 +132,19 @@ import img_skill from '@/assets/img/skill.png'
 const swiperList = [
   {
     img: banner1,
-    title: '您身边的IT专家1',
-    content: '宣传简介您身边的IT专家1宣传简介您身边的IT专家1'
-  },
-  {
-    img: banner2,
-    title: '您身边的IT专家2',
-    content: '宣传简介您身边的IT专家2宣传简介您身边的IT专家2'
-  },
-  {
-    img: banner3,
-    title: '您身边的IT专家3',
-    content: '宣传简介您身边的IT专家3宣传简介您身边的IT专家3'
-  },
+    title: '您身邊的IT專家1',
+    content: '宣傳簡介您身邊的IT專家1宣傳簡介您身邊的IT專家1'
+},
+{
+  img: banner2,
+    title: '您身邊的IT專家2',
+    content: '宣傳簡介您身邊的IT專家2宣傳簡介您身邊的IT專家2'
+},
+{
+  img: banner3,
+    title: '您身邊的IT專家3',
+    content: '宣傳簡介您身邊的IT專家3宣傳簡介您身邊的IT專家3'
+},
 ]
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, Lazy, Autoplay]
@@ -152,27 +152,27 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, Lazy, Autoplay]
 const serverList = [
   {
     logo: img_tel,
-    title: '核心优势1',
-    content: '<p>由专业客服提供人工服务</p>负责疑难问题和故障受理'
-  },
-  {
-    logo: img_computer,
-    title: '核心优势2',
-    content: '<p>利用远程视频工具，提供协助</p>帮助客户进行调试、解决故障'
-  },
-  {
-    logo: img_qq,
-    title: '核心优势3',
-    content: '<p>利用企业QQ提供在线解答</p>帮助企业快速准确解决问题和故障'
-  },
-  {
-    logo: img_skill,
-    title: '核心优势4',
-    content: '<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理'
-  }
+    title:'核心優勢1',
+    content:'<p>由專業客服提供人工服務</p>負責疑難問題和故障受理'
+},
+{
+  logo: img_computer,
+    title:'核心優勢2',
+    content:'<p>利用遠端視頻工具,提供協助</p>幫助客戶進行調試、解決故障'
+},
+{
+  logo: img_qq,
+    title:'核心優勢3',
+    content:'<p>利用企業QQ提供在線解答</p>幫助企業快速準確解決問題和故障'
+},
+{
+  logo: img_skill,
+    title:'核心優勢4',
+    content:'<p>由技術支持工程師,負責問題解答</p>需求受理及故障受理'
+}
 ]
 
-// const { proxy } = getCurrentInstance() //获取上下文实例，ctx=vue2的this
+// const { proxy } = getCurrentInstance() //获取上下文实例,ctx=vue2的this
 onMounted(() => {
   // console.log('mounted', proxy)
   // console.log(proxy.$wow, '------')
